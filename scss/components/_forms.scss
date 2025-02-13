@@ -1,0 +1,40 @@
+@import "../utilities/mixins";
+@import "../variables";
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: $font-size-base;
+  color: $color-dark;
+  background-color: $color-light;
+  border: 1px solid lighten($color-dark, 50%);
+  @include border-radius($border-radius);
+  @include transition(all);
+
+  &:focus {
+    border-color: $color-primary;
+    @include focus-outline($color-primary);
+  }
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: $font-weight-bold;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.checkbox,
+.radio {
+  margin-bottom: 0.5rem;
+
+  input {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+}
