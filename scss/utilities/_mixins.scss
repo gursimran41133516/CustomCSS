@@ -1,0 +1,15 @@
+@mixin transition($properties, $duration: 0.2s, $easing: ease-in-out) {
+    transition: #{$properties} #{$duration} #{$easing};
+  }
+  
+  @mixin border-radius($radius: $border-radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin focus-outline($color: $color-primary) {
+    &:focus {
+      outline: 2px solid $color;
+      outline-offset: 2px;
+    }
+  }
+  
