@@ -2,7 +2,7 @@
 Sarvjot Singh
 Jaskirat Singh
 Gursimran Singh
-surjit kaur
+Surjit kaur
 # Clean Custom CSS Framework
 
 A lightweight, minimalist CSS framework built with Sass. Inspired by Apple's clean and modern aesthetic.
